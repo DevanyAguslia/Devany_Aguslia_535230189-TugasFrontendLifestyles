@@ -22,6 +22,7 @@
             background-color: var(--light-bg);
         }
 
+        /* Navbar styles */
         nav {
             background: var(--primary-color);
             backdrop-filter: blur(10px);
@@ -41,6 +42,14 @@
             font-weight: 700;
             color: white !important;
             font-size: 1.5rem;
+        }
+
+        .navbar-brand:hover {
+            color: var(--accent-color) !important;
+        }
+
+        nav .nav-link:hover {
+            color: var(--accent-color) !important;
         }
 
         .page-header {
@@ -111,9 +120,6 @@
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
                         <a class="nav-link" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="wellness.html">Wellness</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="fashion.html">Fashion</a>
