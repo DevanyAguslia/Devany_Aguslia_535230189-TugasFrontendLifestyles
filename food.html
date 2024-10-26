@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Food & Nutrition - Lifestyle Vibes</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+        :root {
+            --primary-color: #2c3e50;
+            --accent-color: #08df0c;
+            --text-color: #34495e;
+            --light-bg: #f8f9fa;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: var(--light-bg);
+            color: var(--text-color);
+        }
+
+        /* Navbar styles */
+        nav {
+            background: var(--primary-color);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        nav .nav-link {
+            color: white !important;
+            font-weight: 500;
+            padding: 0.5rem 1rem;
+            margin: 0 0.2rem;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+
+        .navbar-brand {
+            font-weight: 700;
+            color: white !important;
+            font-size: 1.5rem;
+        }
+
+        .navbar-brand:hover {
+            color: var(--accent-color) !important;
+        }
+
+        nav .nav-link:hover {
+            color: var(--accent-color) !important;
+        }
+
+        /* Food page specific styles */
+        .page-header {
+            background: linear-gradient(135deg, #05e462 0%, #0a9142 100%);
+            color: white;
+            padding: 6rem 0 3rem 0;
+            margin-bottom: 4rem;
+            text-align: center;
+        }
+
+        .food-card {
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease;
+            text-align: center;
+        }
+
+        .food-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        .food-icon {
+            font-size: 2.5rem;
+            color: #27ae60;
+            margin-bottom: 1rem;
+        }
+
+        .food-content {
+            padding: 4rem 0;
+        }
+
+        .recipe-section {
+            background-color: white;
+            padding: 3rem 0;
+            margin: 4rem 0;
+            border-radius: 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        .btn-food {
+            background-color: #27ae60;
+            color: white;
+            padding: 0.8rem 2rem;
+            border-radius: 50px;
+            border: none;
+            transition: all 0.3s ease;
+            margin-top: 1rem;
+        }
+
+        .btn-food:hover {
+            background-color: #219a52;
+            transform: translateY(-2px);
+            color: white;
+        }
+
+        /* Footer styles */
+        footer {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 2rem 0;
+            margin-top: 4rem;
+        }
+
+        footer a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        footer a:hover {
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Lifestyle Vibes</a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="wellness.html">Wellness</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="fashion.html">Fashion</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Header -->
+    <header class="page-header">
+        <div class="container">
+            <h1 class="display-4">Food & Nutrition</h1>
+            <p class="lead">Discover the path to healthier eating and better nutrition</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container food-content">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="food-card">
+                    <i class="fas fa-carrot food-icon"></i>
+                    <h3>Healthy Recipes</h3>
+                    <p>Discover delicious and nutritious meal ideas that are easy to prepare and perfect for a healthy
+                        lifestyle.</p>
+                    <a href="https://www.eatingwell.com/recipes/" class="btn btn-food">View Recipes</a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="food-card">
+                    <i class="fas fa-apple-alt food-icon"></i>
+                    <h3>Meal Planning</h3>
+                    <p>Learn how to plan balanced, sustainable meals that fit your schedule and nutritional needs.</p>
+                    <a href="https://tastesbetterfromscratch.com/category/meal-plan/" class="btn btn-food">Start
+                        Planning</a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="food-card">
+                    <i class="fas fa-wine-glass-alt food-icon"></i>
+                    <h3>Dietary Tips</h3>
+                    <p>Get expert advice on nutrition and discover the best diet approach for your lifestyle.</p>
+                    <a href="https://www.nhs.uk/live-well/healthy-weight/managing-your-weight/tips-to-help-you-lose-weight/"
+                        class="btn btn-food">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Recipe Section -->
+    <section class="recipe-section">
+        <div class="container">
+            <h2 class="text-center mb-5">Featured Healthy Recipes</h2>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="food-card">
+                        <i class="fas fa-seedling food-icon"></i>
+                        <h3>Vegetarian Dishes</h3>
+                        <p>Explore our collection of nutritious vegetarian recipes that are both tasty and healthy.</p>
+                        <a href="https://themodernproper.com/60-best-vegetarian-meals" class="btn btn-food">View
+                            Collection</a>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="food-card">
+                        <i class="fas fa-fish food-icon"></i>
+                        <h3>Protein-Rich Meals</h3>
+                        <p>Discover high-protein recipes that will keep you energized throughout the day.</p>
+                        <a href="https://www.realsimple.com/food-recipes/recipe-collections-favorites/healthy-meals/high-protein-recipes"
+                            class="btn btn-food">View Collection</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>More Information</h5>
+                    <p>Dedicated to helping you live your best life through wellness, style, and inspiration.</p>
+                </div>
+                <div class="col-md-4">
+                </div>
+                <div class="col-md-4">
+                    <h5>Connect With Us</h5>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/devanyaguslia29" class="me-3"><i
+                                class="fab fa-facebook"></i></a>
+                        <a href="https://github.com/DevanyAguslia" class="me-3"><i class="fab fa-github"></i></a>
+                        <a href="https://www.instagram.com/devany.aguslia/" class="me-3"><i
+                                class="fab fa-instagram"></i></a>
+                        <h6>© Devany Aguslia 535230189</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap & jQuery -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Wellness - Lifestyle Vibes</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+        :root {
+            --primary-color: #2c3e50;
+            --accent-color: #e74c3c;
+            --text-color: #34495e;
+            --light-bg: #f8f9fa;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: var(--light-bg);
+        }
+
+        nav {
+            background: var(--primary-color);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        nav .nav-link {
+            color: white !important;
+            font-weight: 500;
+            padding: 0.5rem 1rem;
+            margin: 0 0.2rem;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+
+        .navbar-brand {
+            font-weight: 700;
+            color: white !important;
+            font-size: 1.5rem;
+        }
+
+        .page-header {
+            background: linear-gradient(#f5a690 0%, #ee1410 100%);
+            color: white;
+            padding: 8rem 0 4rem 0;
+            margin-bottom: 4rem;
+            text-align: center;
+        }
+
+        .wellness-card {
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease;
+            text-align: center;
+        }
+
+        .wellness-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .wellness-icon {
+            font-size: 2.5rem;
+            color: var(--accent-color);
+            margin-bottom: 1rem;
+        }
+
+        footer {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 2rem 0;
+            margin-top: 4rem;
+        }
+
+        footer a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        footer a:hover {
+            color: white;
+        }
+
+        .content-section {
+            padding: 4rem 0;
+        }
+
+        .wellness-tips {
+            margin-top: 3rem;
+            padding: 2rem;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Lifestyle Vibes</a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="wellness.html">Wellness</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="fashion.html">Fashion</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="food.html">Food & Nutrition</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="page-header">
+        <div class="container">
+            <h1 class="display-4">Wellness Journey</h1>
+            <p class="lead">Discover your path to physical and mental well-being</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container content-section">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="wellness-card">
+                    <i class="fas fa-heart wellness-icon"></i>
+                    <h3>Meditation</h3>
+                    <p>Find inner peace through guided meditation practices.</p>
+                    <a href="https://www.nhs.uk/every-mind-matters/mental-wellbeing-tips/how-to-meditate-for-beginners/"
+                        class="btn btn-primary mt-3">Learn More</a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="wellness-card">
+                    <i class="fas fa-running wellness-icon"></i>
+                    <h3>Exercise</h3>
+                    <p>Discover workout routines and fitness tips for a healthier lifestyle.</p>
+                    <a href="https://www.health.com/fitness/workout-schedule" class="btn btn-primary mt-3">Start Now</a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="wellness-card">
+                    <i class="fas fa-brain wellness-icon"></i>
+                    <h3>Mental Health</h3>
+                    <p>Access resources and guidance for maintaining mental wellness.</p>
+                    <a href="https://www.nhs.uk/mental-health/self-help/guides-tools-and-activities/five-steps-to-mental-wellbeing/"
+                        class="btn btn-primary mt-3">Explore</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="wellness-tips mt-5">
+            <h2 class="text-center mb-4">Daily Wellness Tips</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <ul class="list-unstyled">
+                        <li class="mb-3"><i class="fas fa-check text-primary me-2"></i> Practice mindful breathing for
+                            10 minutes daily</li>
+                        <li class="mb-3"><i class="fas fa-check text-primary me-2"></i> Take regular breaks during work
+                            hours</li>
+                        <li class="mb-3"><i class="fas fa-check text-primary me-2"></i> Stay hydrated throughout the day
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <ul class="list-unstyled">
+                        <li class="mb-3"><i class="fas fa-check text-primary me-2"></i> Get 7-8 hours of quality sleep
+                        </li>
+                        <li class="mb-3"><i class="fas fa-check text-primary me-2"></i> Take a short walk during lunch
+                            break</li>
+                        <li class="mb-3"><i class="fas fa-check text-primary me-2"></i> Practice gratitude journaling
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>More Information</h5>
+                    <p>Dedicated to helping you live your best life through wellness, style, and inspiration.</p>
+                </div>
+                <div class="col-md-4">
+                </div>
+                <div class="col-md-4">
+                    <h5>Connect With Us</h5>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/devanyaguslia29" class="me-3"><i
+                                class="fab fa-facebook"></i></a>
+                        <a href="https://github.com/DevanyAguslia" class="me-3"><i class="fab fa-github"></i></a>
+                        <a href="https://www.instagram.com/devany.aguslia/" class="me-3"><i
+                                class="fab fa-instagram"></i></a>
+                        <h6>© Devany Aguslia 535230189</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
